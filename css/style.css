@@ -30,7 +30,7 @@ header {
 .header-inner {
   max-width: 1200px;
   margin: auto;
-  padding: 10px 14px;
+  padding: 7px 11px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -729,4 +729,5 @@ header {
 }
 
 /* =====================*
+
 
