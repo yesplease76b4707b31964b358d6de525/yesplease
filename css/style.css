@@ -515,3 +515,209 @@ header, .site-header {
     .product-name, .collection-card p { font-size: 0.85rem; }
     .product-image, .collection-image { height: 120px; }
 }
+/* =========================================
+   GOD-TIER MOBILE REFINEMENT
+   DO NOT TOUCH DESKTOP
+   ========================================= */
+@media (max-width: 768px) {
+
+  /* GLOBAL RHYTHM */
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  section {
+    margin-bottom: 60px;
+  }
+
+  /* HEADER */
+  header {
+    padding: 10px 14px;
+  }
+
+  .logo img {
+    height: 42px;
+  }
+
+  /* HERO — elegant, not jumbo */
+  .hero {
+    padding: 50px 20px;
+    margin: 30px 14px;
+    border-radius: 18px;
+  }
+
+  .hero h2 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+  }
+
+  .hero-actions a {
+    padding: 12px 22px;
+    font-size: 0.85rem;
+  }
+
+  /* SHOP INTRO */
+  .shop-intro h1 {
+    font-size: 1.7rem;
+  }
+
+  .shop-intro p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  /* SHOP SECTIONS */
+  .shop-section {
+    margin-bottom: 50px;
+  }
+
+  .shop-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 18px;
+  }
+
+  /* PRODUCT GRID — SHOPIFY STYLE */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .product-card {
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  /* SMALL, CLEAN IMAGES — NO JUMBO */
+  .product-image {
+    height: 110px;
+    border-radius: 10px;
+    background: #f4f4f4;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 6px;
+  }
+
+  .product-name {
+    font-size: 0.85rem;
+    margin-top: 6px;
+    line-height: 1.3;
+  }
+
+  /* COLLECTIONS — COMPACT & EXPENSIVE */
+  .collections {
+    padding: 60px 5%;
+  }
+
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .collection-card {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .collection-image {
+    height: 100px;
+  }
+
+  .collection-image img {
+    object-fit: contain;
+    padding: 6px;
+  }
+
+  .collection-card p {
+    font-size: 0.9rem;
+    margin-top: 6px;
+  }
+
+  /* FEATURED SECTION */
+  .featured {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 60px 5%;
+  }
+
+  .featured-image {
+    height: 220px;
+    border-radius: 22px;
+  }
+
+  /* BRAND STORY */
+  .brand-story {
+    padding: 60px 8%;
+    margin: 60px 5%;
+  }
+
+  .brand-story h2 {
+    font-size: 1.8rem;
+  }
+
+  .brand-story p {
+    font-size: 0.95rem;
+  }
+
+  /* TRUST STRIP */
+  .trust-strip {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    font-size: 0.9rem;
+  }
+
+  /* PACKAGING — CLEAN, PRODUCT-FOCUSED */
+  .packaging-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .packaging-image {
+    height: 200px;
+  }
+
+  /* FOOTER — already good, light refine */
+  .footer-brand {
+    font-size: 13px;
+  }
+
+  .footer-links {
+    font-size: 12px;
+  }
+}
+
+/* EXTRA SMALL PHONES */
+@media (max-width: 420px) {
+
+  .product-grid,
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image,
+  .collection-image {
+    height: 100px;
+  }
+}
+/* NAV ANIMATION */
+.nav {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.nav.open {
+  max-height: 400px;
+  opacity: 1;
+}
