@@ -97,13 +97,13 @@ header {
 .hero-brand {
   display: inline-block;
   letter-spacing: 4px;
-  font-size: 12px;
+  font-size: 20px;
   color: #888;
   margin-bottom: 12px;
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 25px;
   font-weight: 700;
   margin-bottom: 16px;
 }
